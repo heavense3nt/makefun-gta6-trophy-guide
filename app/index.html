@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI · all 55 PS5 trophies</title>
+<meta name="description" content="Offline guide and tracker for every PlayStation 5 trophy of Grand Theft Auto VI: roadmap to the platinum, missable flags, and a cited guide for each trophy.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="look.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="kicker">Grand Theft Auto VI · PlayStation 5 · offline guide</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="lede">All 55 trophies — 1 platinum, 2 gold, 6 silver, 46 bronze — with a roadmap to the platinum, every missable trophy flagged, and a guide for each one in its own words, with its sources named.</p>
+    <div class="meter" role="status" aria-label="trophy progress">
+      <div class="meter-track"><div class="meter-fill" id="progressFill" style="width:0%"></div></div>
+      <p class="meter-text" id="progressText">0 of 55 earned · 0%</p>
+      <p class="meter-grades" id="gradeCounts"></p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="warn" id="missableBanner">
+    <strong>Watch out: one trophy may be missable.</strong>
+    <span id="missableNote">Positive Mental Attitude — meditate at the Chapter 1 home spot before that chapter ends.</span>
+  </section>
+
+  <section class="roadmap" id="roadmapSection" aria-label="Roadmap to the platinum">
+    <h2 id="roadmapTitle">Roadmap to the platinum</h2>
+    <p class="roadmap-meta" id="roadmapMeta"></p>
+    <ol class="roadmap-steps" id="roadmapList"></ol>
+    <p class="roadmap-note" id="roadmapNote"></p>
+  </section>
+
+  <section class="board" aria-label="Trophy tracker">
+    <div class="toolbar">
+      <label class="search">Search
+        <input id="searchBox" type="search" placeholder="Name, mission, place…" autocomplete="off">
+      </label>
+      <div class="kindbar" id="kindBar" role="group" aria-label="Filter by kind">
+        <button type="button" data-kind="all" class="on">All kinds</button>
+        <button type="button" data-kind="story">Story</button>
+        <button type="button" data-kind="missable">Missable</button>
+        <button type="button" data-kind="collectibles">Collectibles</button>
+        <button type="button" data-kind="activities">Activities</button>
+        <button type="button" data-kind="online">Online</button>
+      </div>
+      <label class="grade">Grade
+        <select id="gradePick">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="spoiler">Hide story spoilers
+        <input id="spoilerSwitch" type="checkbox">
+      </label>
+      <div class="fileops">
+        <button id="exportBtn" type="button">Export progress</button>
+        <label class="importbtn">Import progress
+          <input id="importFile" type="file" accept="application/json,.json">
+        </label>
+        <button id="resetBtn" type="button">Reset</button>
+      </div>
+    </div>
+    <p class="shown" id="shownCount"></p>
+    <div class="grid" id="cardGrid"></div>
+    <p class="empty" id="emptyNote" hidden>No trophies match these filters. Try another kind or clear the search.</p>
+  </section>
+
+  <footer class="colophon">
+    <p>Official names, descriptions and grades are shown as PlayStation publishes them (as listed by PSNProfiles and Exophase). Every guide is written in the author's own words; the source beside each guide names where its facts come from — a source is cited, never copied. No Rockstar logo, artwork or game imagery is used here. Data: app/data/trophies.json · app/data/roadmap.json. Sources: PowerPyx, GTABase, GTA Zone, PSNProfiles, Exophase.</p>
+  </footer>
+</main>
+<script type="module" src="main.js"></script>
+</body>
+</html>
